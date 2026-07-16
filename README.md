@@ -44,5 +44,3 @@ The project is organized into packages, with the following structure:
 
 
 
-- [DevMedia - DAO Pattern: Data Persistence Using the DAO Pattern](https://www.devmedia.com.br/dao-pattern-persistencia-de-dados-utilizando-o-padrao-dao/30999)
-- [Oracle - Java Data Access Object](https://www.oracle.com/technetwork/java/dat
