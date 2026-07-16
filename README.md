@@ -6,16 +6,7 @@ This project is an implementation of the DAO (Data Access Object) pattern in Jav
 
 The project consists of a simple management system for sellers and departments. It allows performing basic CRUD (Create, Read, Update, Delete) operations for sellers and departments, storing the data in a MySQL database.
 
-## Features
 
-The project offers the following features:
-
-- Query seller by ID.
-- Query all sellers.
-- Query sellers by department.
-- Insert new seller.
-- Update seller data.
-- Delete a seller.
 
 ## Project Structure
 
@@ -43,27 +34,15 @@ The project is organized into packages, with the following structure:
 1. Clone the project repository to your local environment.
 2. Configure the `db.properties` file with the access information to your MySQL database.
 3. Import the project into your preferred Java IDE (such as Eclipse or IntelliJ).
-4. Ensure that the dependencies are correctly configured (e.g., MySQLConnector).
-
-## Class Diagram
-
-<!-- <img src="https://github.com/jbrun0r/assets/blob/main/Java-DAO-JDBC/class-diagram.png?raw=true" width="100%"> -->
-
-![](https://github.com/jbrun0r/assets/blob/main/Java-DAO-JDBC/class-diagram.png?raw=true)
-
+4. Ensure that the dependencies are correctly configured (e.g., MySQLConnector
+5. 
 ## Overview of the DAO Pattern
 
 <!-- <img src="https://github.com/jbrun0r/assets/blob/main/Java-DAO-JDBC/data-access-object.png?raw=true" width="100%"> -->
 
 ![](https://github.com/jbrun0r/assets/blob/main/Java-DAO-JDBC/data-access-object.png?raw=true)
 
-## Overview of JDBC
 
-<!-- <img src="https://github.com/jbrun0r/assets/blob/main/Java-DAO-JDBC/java-database-connectivity.png?raw=true" width="300px"> -->
-
-![](https://github.com/jbrun0r/assets/blob/main/Java-DAO-JDBC/java-database-connectivity.png?raw=true)
-
-## References
 
 - [DevMedia - DAO Pattern: Data Persistence Using the DAO Pattern](https://www.devmedia.com.br/dao-pattern-persistencia-de-dados-utilizando-o-padrao-dao/30999)
-- [Oracle - Java Data Access Object](https://www.oracle.com/technetwork/java/dataaccessobject-138824.html)
+- [Oracle - Java Data Access Object](https://www.oracle.com/technetwork/java/dat
