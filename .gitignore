@@ -1,2 +1,24 @@
+# Compiled files
+out/
+*.class
 
-/bin/
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# SQL variables 
+.properties
