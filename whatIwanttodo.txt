@@ -1,0 +1,150 @@
+Important -> I want you to create a new text going to detail about how you will achieve this 
+        no coding just planning 
+
+
+
+
+
+
+I already have a Java project that implements the DAO (Data Access Object) pattern using JDBC and MySQL.
+
+Current architecture:
+
+application
+ └── App.java
+
+model
+ ├── entities
+ │    ├── Seller.java
+ │    └── Department.java
+ ├── dao
+ │    ├── SellerDao.java
+ │    ├── DepartmentDao.java
+ │    └── impl
+ │         └── SellerDaoJDBC.java
+
+db
+ ├── DB.java
+ ├── DbException.java
+ └── DbIntegrityException.java
+
+The project already supports:
+
+- Find seller by ID
+- Find all sellers
+- Find sellers by department
+- Insert seller
+- Update seller
+- Delete seller
+
+Do NOT rewrite the DAO layer.
+Do NOT modify SellerDao or SellerDaoJDBC unless absolutely necessary.
+Keep JDBC and MySQL exactly as they are.
+
+Your job is ONLY to replace the demo App.java with a professional interactive console application.
+
+Requirements:
+
+1. Display a clean ASCII welcome screen.
+
+Example:
+
+====================================================
+         SELLER MANAGEMENT SYSTEM
+      Java + JDBC + DAO + MySQL
+====================================================
+
+2. Create an infinite menu loop until Exit is chosen.
+
+Menu:
+
+1. View All Sellers
+2. Find Seller by ID
+3. Find Sellers by Department
+4. Add Seller
+5. Update Seller
+6. Delete Seller
+7. Show Departments
+8. Search Seller by Name
+9. Salary Statistics
+10. Exit
+
+3. Every menu option should interactively ask the user for input using Scanner.
+
+Example:
+
+Enter Seller Name:
+Enter Email:
+Enter Birth Date (yyyy-MM-dd):
+Enter Base Salary:
+Enter Department ID:
+
+4. Validate input whenever possible.
+
+- ID must be positive.
+- Salary cannot be negative.
+- Handle invalid integers without crashing.
+- Handle invalid dates.
+- Never terminate because of InputMismatchException.
+
+5. Every database operation should print a professional success/failure message.
+
+Examples:
+
+✓ Seller inserted successfully.
+Generated ID: 12
+
+✓ Seller updated successfully.
+
+✗ Seller not found.
+
+✗ Invalid department.
+
+6. Display sellers in a formatted table instead of calling toString().
+
+Example:
+
++----+----------------+----------------------+----------+--------------+
+| ID | Name           | Email                | Salary   | Department   |
++----+----------------+----------------------+----------+--------------+
+| 1  | Bob Brown      | bob@gmail.com        | 1000.00  | Computers    |
++----+----------------+----------------------+----------+--------------+
+
+7. Add helper methods inside App.java to keep main() short.
+
+Examples:
+
+showMenu()
+viewAllSellers()
+insertSeller()
+updateSeller()
+deleteSeller()
+searchSellerById()
+
+8. If an operation throws a DAO/database exception, catch it and print a readable message instead of crashing.
+
+9. When exiting, close the database connection gracefully.
+
+10. Keep the code beginner-friendly and heavily commented.
+
+11. Do not use any external libraries.
+
+Only use:
+
+java.util.Scanner
+java.time.LocalDate
+java.util.List
+JDBC
+
+12. Follow clean coding principles.
+
+- Small methods
+- Meaningful variable names
+- No duplicated code
+- No magic numbers
+
+13. The final program should feel like a real CRUD desktop application running inside the terminal.
+
+The code should be modular, readable, and presentation-ready for a college project.
+
+Return the complete App.java.
