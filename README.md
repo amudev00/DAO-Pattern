@@ -1,3 +1,5 @@
+## NOT ORIGINAL PROJECT
+
 # Project DAO(Data Access Object) with JDBC in Java using MySQL
 
 This project is an implementation of the DAO (Data Access Object) pattern in Java, using JDBC (Java Database Connectivity) to interact with a MySQL database. The DAO pattern is an approach to organize the persistence layer in an application, separating data access operations from business logic.
